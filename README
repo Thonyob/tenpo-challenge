@@ -1,0 +1,37 @@
+# Calculate Percentage
+
+**Calculate Percentage** es una aplicación que permite calcular el porcentaje de un número dado. Utiliza **PostgreSQL** como base de datos y **Redis** para almacenamiento en caché, optimizando el rendimiento de las operaciones de cálculo.
+
+## Características
+
+- **Cálculo de porcentajes**: Calcula el porcentaje de un número dado en tiempo real.
+- **Persistencia de datos**: Los resultados se almacenan en una base de datos PostgreSQL.
+- **Optimización con Redis**: Los resultados de los cálculos se almacenan en caché para mejorar el rendimiento.
+- **API Documentada con Swagger**: La API es accesible y está completamente documentada a través de Swagger.
+
+## Requisitos
+
+Para ejecutar el proyecto, necesitas tener instalados los siguientes programas:
+
+- **Java 21**
+- **Docker** (para ejecutar la aplicación y los servicios en contenedores)
+- **Maven** (para compilar el proyecto)
+
+## Instalación
+
+### Clonar el repositorio
+
+Primero, clona el repositorio en tu máquina local desde la rama "MASTER"
+
+##bash
+git clone https://github.com/Thonyob/tenpo-challenge.git
+
+##pasos
+
+
+**Levantar desde la terminal del proyecto el 
+  comando : docker-compose up -d
+
+**Levantar el proyecto 
+
+**Cabe indicar que tambien se puede levantar solo el docker-compose y probar la app con la collecion de postman , la app esta corriendo en el puerto 8181
