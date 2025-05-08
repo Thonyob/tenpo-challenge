@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:7.2-alpine
+    container_name: redis
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - backend
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: tenpo_user
+      POSTGRES_PASSWORD: tenpo_pass
+      POSTGRES_DB: tenpo_db
+    networks:
+      - backend
+
+  calculate-percentage:
+    image: thonyob/calculate-percentage:latest
+    container_name: calculate-percentage
+    restart: always
+    ports:
+      - "8181:8181"
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/tenpo_db
+      SPRING_DATASOURCE_USERNAME: tenpo_user
+      SPRING_DATASOURCE_PASSWORD: tenpo_pass
+      SPRING_REDIS_HOST:   redis
+    depends_on:
+      - redis
+      - postgres
+    networks:
+      - backend
+
+
+
+networks:
+  backend:
+    driver: bridge
