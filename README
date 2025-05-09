@@ -21,17 +21,22 @@ Para ejecutar el proyecto, necesitas tener instalados los siguientes programas:
 
 ### Clonar el repositorio
 
-Primero, clona el repositorio en tu máquina local desde la rama "MASTER"
+Primero, clona el repositorio en una carpeta
 
 ##bash
-git clone https://github.com/Thonyob/tenpo-challenge.git
+Ejecutar comando en terinal BASH
+git clone -b master https://github.com/Thonyob/tenpo-challenge.git
 
 ##pasos
 
+OPCION 1:
 
-**Levantar desde la terminal del proyecto el 
-  comando : docker-compose up -d
+**Levantar desde la terminal del proyecto : 
 
+-docker-compose up -d
+-probar con postman (se encuentra en la raiz del proyecto) , 
+
+OPCION 2:
+
+**Borrar del docker-compose la seccion cuando se levanta la imagen de la APP --thonyob/calculate-percentage:latest
 **Levantar el proyecto 
-
-**Cabe indicar que tambien se puede levantar solo el docker-compose y probar la app con la collecion de postman , la app esta corriendo en el puerto 8181
