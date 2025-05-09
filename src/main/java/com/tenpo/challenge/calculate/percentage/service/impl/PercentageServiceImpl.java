@@ -4,10 +4,8 @@ import com.tenpo.challenge.calculate.percentage.event.ErrorEvent;
 import com.tenpo.challenge.calculate.percentage.exception.ExternalServiceException;
 import com.tenpo.challenge.calculate.percentage.service.PercentageService;
 import com.tenpo.challenge.calculate.percentage.webclient.ExternalPercentageWebClient;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 

@@ -34,7 +34,8 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/tenpo_db
       SPRING_DATASOURCE_USERNAME: tenpo_user
       SPRING_DATASOURCE_PASSWORD: tenpo_pass
-      SPRING_REDIS_HOST:   redis
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_DATA_REDIS_PORT: 6379
     depends_on:
       - redis
       - postgres
