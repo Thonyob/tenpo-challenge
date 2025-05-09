@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "c478d161-9fd1-4987-85c0-b2f557b155ed",
+		"name": "tenpo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13050482"
+	},
+	"item": [
+		{
+			"name": "Consulta Calculo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num1\":1,\r\n    \"num2\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/calculatePercentage/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"calculatePercentage",
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Log",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
