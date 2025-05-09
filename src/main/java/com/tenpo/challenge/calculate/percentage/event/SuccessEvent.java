@@ -2,6 +2,7 @@ package com.tenpo.challenge.calculate.percentage.event;
 
 import lombok.Data;
 
+
 @Data
 public class SuccessEvent {
 
